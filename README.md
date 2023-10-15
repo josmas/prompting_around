@@ -57,9 +57,21 @@ If you want to use [AimOS](https://github.com/aimhubio/aimos) for observability,
 
 This will create a folder at `.aim` to store all the needed artefacts.
 
+To run the AimOS server type:  ```aimos server```.
+
+To run the AimOS UI and navigate to the provided URL after typing: ```aimos ui```.
+
+The langchain debugging system will contain a `trace` for each time you run and log a completion or chat message.
 
 ## Initial sample files
 There are two initial samples that use AimOS, so make sure you either set it up correctly or modify the samples before running them.
+
+### OpenAI sample
+[langchain_openai.py](./src/samples/langchain_openai.py) shows an example of how to use langchain with OpenAI and store the debugging information in AimOS.
+
+[langchain_ollama.py](./src/samples/langchain_ollama.py) shows the same example but this time using an local model through [Ollama](https://www.ollama.ai/). In this case it uses the `mistral` model, but it is just a matter of changing the name when initializing the model. The debugging information is also stored in AimOS.
+
+### Ollama local sample
 
 ## Contributing
 
@@ -89,7 +101,3 @@ Please ensure that your contributions adhere to the project's coding standards a
 ## License
 
 This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
-
-Feel free to reach out if you have any questions or need further assistance with the project.
-
-Happy "Prompting Around"!
