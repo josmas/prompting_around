@@ -1,10 +1,8 @@
 #%%
-import os
 from langchain.prompts import ChatPromptTemplate
 from langchain.chat_models import ChatOllama
 from langchain.callbacks.manager import CallbackManager
 from langchain.callbacks.streaming_stdout import StreamingStdOutCallbackHandler
-
 from local_generic_callback_handler import LocalGenericCallbackHandler 
 
 #%%

@@ -66,6 +66,8 @@ The langchain debugging system will contain a `trace` for each time you run and 
 ## Initial sample files
 There are two initial samples that use AimOS, so make sure you either set it up correctly or modify the samples before running them.
 
+Note that these files are written to be executed as cells like a Jupyter notebook. If you use [VSCodium](https://vscodium.com/) make sure to install the Jupyter extension.
+
 ### OpenAI sample
 [langchain_openai.py](./src/samples/langchain_openai.py) shows an example of how to use langchain with OpenAI and store the debugging information in AimOS.
 
