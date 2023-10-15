@@ -4,8 +4,6 @@
 
 Welcome to "Prompting Around," an exploratory playground for prompting Language Models, including both OpenAI and local models. 
 
-`Current State`: No LLM functionality is currently available.
-
 ## Installation
 This project is built with the [Poetry](https://python-poetry.org/) dependency management tool to simplify package management. Also this means that you don't need to worry about virtual environments as poetry will take care of it too.
 
@@ -41,6 +39,8 @@ Consider forking the project first!
 
 
 To exit the sheel simply type `exit`.
+
+If you would like to use dotenv to set constants such as API keys, copy `sample.env` into `.env` and add your keys in the newly copied file.
 
 ## Running Tests
 

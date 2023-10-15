@@ -6,6 +6,7 @@ from langchain.chat_models import ChatOpenAI
 from aimstack.langchain_debugger.callback_handlers import GenericCallbackHandler
 
 #%%
+# Make sure you have copied sample.env into .env and added your API key to that file.
 load_dotenv()
 
 #%%
