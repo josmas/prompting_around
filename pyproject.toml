@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "prompting-around"
+version = "0.1.0"
+description = "a playground for prompting activities"
+authors = ["josmas <josmasflores@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langchain = "^0.0.314"
+openai = "^0.28.1"
+python-dotenv = "^1.0.0"
+
+[tool.poetry.group.dev.dependencies]
+icecream = "^2.1.3"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.2"
+mock = "^5.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
