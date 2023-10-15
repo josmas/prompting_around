@@ -46,10 +46,20 @@ To exit the sheel simply type `exit`.
 
 To run tests for the project, you can use the following command:
 
-    ```pytest```
-
+    pytest
 
 This will execute the test suite and provide feedback on the project's functionality and code quality.
+
+## logging and monitoring with aimos
+If you want to use [AimOS](https://github.com/aimhubio/aimos) for observability, it can be initialized by running the following command in the root folder:
+
+    aimos init
+
+This will create a folder at `.aim` to store all the needed artefacts.
+
+
+## Initial sample files
+There are two initial samples that use AimOS, so make sure you either set it up correctly or modify the samples before running them.
 
 ## Contributing
 
