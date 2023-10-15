@@ -1,11 +1,12 @@
 #%%
 import os
+from dotenv import load_dotenv
 from langchain.prompts import ChatPromptTemplate
 from langchain.chat_models import ChatOpenAI
 from aimstack.langchain_debugger.callback_handlers import GenericCallbackHandler
 
 #%%
-os.environ["OPENAI_API_KEY"] = ""
+load_dotenv()
 
 #%%
 prompt = ChatPromptTemplate.from_template("tell me a joke about {foo}")

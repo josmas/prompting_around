@@ -1,6 +1,8 @@
 # aimos
 .aim/
 
+.env
+
 *.pyc
 
 # Packages
