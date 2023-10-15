@@ -50,7 +50,7 @@ To run tests for the project, you can use the following command:
 
 This will execute the test suite and provide feedback on the project's functionality and code quality.
 
-## logging and monitoring with aimos
+## Logging and monitoring with aimos
 If you want to use [AimOS](https://github.com/aimhubio/aimos) for observability, it can be initialized by running the following command in the root folder:
 
     aimos init
@@ -68,12 +68,9 @@ There are two initial samples that use AimOS, so make sure you either set it up 
 
 Note that these files are written to be executed as cells like a Jupyter notebook. If you use [VSCodium](https://vscodium.com/) make sure to install the Jupyter extension.
 
-### OpenAI sample
 [langchain_openai.py](./src/samples/langchain_openai.py) shows an example of how to use langchain with OpenAI and store the debugging information in AimOS.
 
 [langchain_ollama.py](./src/samples/langchain_ollama.py) shows the same example but this time using an local model through [Ollama](https://www.ollama.ai/). In this case it uses the `mistral` model, but it is just a matter of changing the name when initializing the model. The debugging information is also stored in AimOS.
-
-### Ollama local sample
 
 ## Contributing
 
@@ -102,4 +99,4 @@ Please ensure that your contributions adhere to the project's coding standards a
 
 ## License
 
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
