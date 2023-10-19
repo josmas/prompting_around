@@ -1,4 +1,4 @@
-from db.database import engine, Session
+from db.database import Session
 from db.models import User
 
 def test_database_connection():
