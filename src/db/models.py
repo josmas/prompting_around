@@ -1,9 +1,11 @@
-from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from sqlalchemy.orm import DeclarativeBase
+from sqlalchemy.sql import func
 
 class Base(DeclarativeBase):
     __abstract__ = True
+    created_at = Column(DateTime(timezone=True), server_default=func.now())
 
 class User(Base):
     __tablename__ = 'users'

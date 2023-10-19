@@ -42,6 +42,36 @@ To exit the sheel simply type `exit`.
 
 If you would like to use dotenv to set constants such as API keys, copy `sample.env` into `.env` and add your keys in the newly copied file.
 
+## Database Operations
+
+This project uses SQLAlchemy to connect to a postgreSQL database. The DB can be configured in the .env file (copied from sample.env). Alembic is used to manage databse changes and migrations.
+
+### Setting up the DB
+After cloning this repo and adding your database configuration to your .env file, simply run the `upgrade DB` command as follows:
+
+```
+poetry run python revision.py "Add created_at column to all tables"
+```
+
+### DB Migrations
+You can modify the alembic.ini file directly to add your DB setings, but it is not recommended. There are two python scripts, namely revision.py and upgrade.py that will read the configuration from dotenv and call the revision and upgrade Alembic commands for you, based on the env values. Revision also autogenerates the migration script. This is the usage:
+
+For revision, pass a message to autogenerate the script:
+
+```
+poetry run python revision.py "Add created_at column to all tables"
+```
+
+For upgrade, simply call the script:
+
+```
+poetry run python upgrade.py
+```
+
+
+Make sur you use `poetry` so that the virtual environment is used correctly.
+When making changes to the DB, these two operations should alwyas be run, in this order; first run revision to auto-generate a migration script, then run the actual upgrade.
+
 ## Running Tests
 
 To run tests for the project, you can use the following command:
