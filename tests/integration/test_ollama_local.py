@@ -1,4 +1,4 @@
-from promptingaround.ollama_local import generate_text
+from ui.ollama_local import generate_text
 from langchain.schema import AIMessage
 
 def test_generate_text():
