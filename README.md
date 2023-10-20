@@ -102,6 +102,15 @@ Note that these files are written to be executed as cells like a Jupyter noteboo
 
 [langchain_ollama.py](./src/samples/langchain_ollama.py) shows the same example but this time using an local model through [Ollama](https://www.ollama.ai/). In this case it uses the `mistral` model, but it is just a matter of changing the name when initializing the model. The debugging information is also stored in AimOS.
 
+## The UI
+There is an initial UI component developed with Gradio.
+The ui module uses relative imports and it can be started from the top folder by running:
+
+```
+python -m src.ui.ui 
+```
+
+
 ## Contributing
 
 We welcome contributions to "Prompting Around"! If you'd like to contribute, please follow these steps:
